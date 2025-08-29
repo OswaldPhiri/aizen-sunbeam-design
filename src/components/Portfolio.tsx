@@ -71,7 +71,7 @@ export const Portfolio = () => {
               rel="noopener noreferrer"
               className="block group"
             >
-              <<Card className="h-full flex flex-col bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all duration-300 transform hover:-translate-y-1">>
+              <Card className="h-full flex flex-col bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all duration-300 transform hover:-translate-y-1">
                 <div className="relative overflow-hidden aspect-video rounded-t-xl">
                   <img 
                     src={project.image}
@@ -79,8 +79,8 @@ export const Portfolio = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
-                  <div className="className="absolute inset-0 bg-brand-charcoal/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4"">
-                    <<<Button size="sm" className="bg-brand-purple text-brand-off-white font-bold hover:bg-opacity-80 text-sm shadow-lg">>">
+                  <div className="absolute inset-0 bg-brand-charcoal/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+                    <Button size="sm" className="bg-brand-purple text-brand-off-white font-bold hover:bg-opacity-80 text-sm shadow-lg">
                       <ExternalLink size={16} className="mr-2" />
                       View Live Demo
                     </Button>
@@ -97,7 +97,7 @@ export const Portfolio = () => {
                     {project.tech.map((tech) => (
                       <span 
                         key={tech}
-                        className="className="className="className="className="px-3 py-1 bg-brand-purple/10 text-brand-purple text-xs font-bold rounded-full"""""
+                        className="px-3 py-1 bg-brand-purple/10 text-brand-purple text-xs font-bold rounded-full"
                       >
                         {tech}
                       </span>
