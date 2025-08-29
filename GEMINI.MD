@@ -1,0 +1,1 @@
+This file will be updated every 20 messages to keep a log of our interactions.

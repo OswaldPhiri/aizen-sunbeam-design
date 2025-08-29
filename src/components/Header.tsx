@@ -15,13 +15,11 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-foreground tracking-tight">
-              Aizen<span className="text-primary">Tech</span>
-            </h1>
+          <div className="flex items-center h-12">
+            <img src="src/images/AIZEN.png" alt="AizenTech Logo" className="h-12 w-auto object-contain" />
           </div>
 
           {/* Desktop Navigation */}

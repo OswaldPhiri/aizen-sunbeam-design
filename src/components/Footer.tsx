@@ -31,10 +31,8 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center">
-              <h3 className="text-2xl font-bold text-foreground tracking-tight">
-                Aizen<span className="text-primary">Tech</span>
-              </h3>
+            <div className="flex items-center h-12">
+              <img src="src/images/AIZEN.png" alt="AizenTech Logo" className="h-12 w-auto object-contain" />
             </div>
             <p className="text-muted-foreground leading-relaxed text-sm">
               Creativity Meets Technology. Empowering Malawian businesses with modern, 
