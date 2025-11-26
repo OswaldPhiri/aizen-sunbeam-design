@@ -1,25 +1,42 @@
-import { Code, Palette, Smartphone } from "lucide-react";
+import { Code, Palette, Wrench } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const Services = () => {
   const services = [
     {
       icon: Code,
-      title: "Web Development & Design",
-      description: "Modern, responsive websites and e-commerce platforms built with cutting-edge technologies. From concept to deployment, we create digital experiences that drive results.",
-      features: ["Responsive Design", "E-commerce Solutions", "Custom Web Applications", "SEO Optimization"]
+      title: "Web & Application Development",
+      description: "Responsive, high-performance websites and apps tailored to your business needs—from marketing sites to complex internal tools.",
+      features: [
+        "Portfolio websites",
+        "Business websites",
+        "E-commerce systems",
+        "Web apps (dashboards, internal tools)",
+        "Mobile-friendly UI designs"
+      ]
     },
     {
       icon: Palette,
       title: "Graphic Design",
-      description: "Complete branding solutions including logos, banners, business cards, and marketing materials. We create visual identities that make your brand stand out.",
-      features: ["Logo Design", "Brand Identity Kits", "Marketing Materials", "Print & Digital Design"]
+      description: "Visual identities and marketing assets that keep your brand consistent across every touchpoint.",
+      features: [
+        "Branding (logos, identities, style guides)",
+        "Posters, flyers, social media content",
+        "Business cards",
+        "Print design"
+      ]
     },
     {
-      icon: Smartphone,
-      title: "Software Development",
-      description: "Custom software solutions tailored to your business needs. From mobile apps to desktop applications, we build technology that scales with your growth.",
-      features: ["Mobile Applications", "Desktop Software", "API Development", "System Integration"]
+      icon: Wrench,
+      title: "Technical Support",
+      description: "Hands-on support that keeps your systems running smoothly, from hardware fixes to network optimization.",
+      features: [
+        "Computer hardware repairs",
+        "Software troubleshooting",
+        "Windows/MacOS install & config",
+        "Network setup (WiFi, routers, LAN)",
+        "Diagnostics & optimization"
+      ]
     }
   ];
 

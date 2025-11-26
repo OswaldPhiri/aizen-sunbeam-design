@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/images/Aizen.png";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,12 +16,24 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
-      <div className="container mx-auto px-4 py-2">
-        <div className="flex items-center justify-between">
+      <div className="w-full px-4 sm:px-6 py-2 max-w-screen-2xl mx-auto">
+        <div className="flex items-center justify-between gap-4">
           {/* Logo */}
-          <div className="flex items-center h-12">
-            <img src="src/images/AIZEN.png" alt="AizenTech Logo" className="h-12 w-auto object-contain" />
-          </div>
+          <a
+            href="#home"
+            onClick={(event) => {
+              event.preventDefault();
+              scrollToSection("home");
+            }}
+            aria-label="Go to homepage"
+            className="flex items-center h-20 pr-6 -ml-3 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+          >
+            <img
+              src={logo}
+              alt="AizenTech Logo"
+              className="h-20 w-auto object-contain"
+            />
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

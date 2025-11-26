@@ -1,9 +1,16 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { ExternalLink } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 export const Portfolio = () => {
   const projects = [
+    {
+      title: "BudgetMate",
+      description: "A friendly personal finance dashboard that helps you track spending, log transactions, and stay on budget with a clean UI.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+      liveUrl: "https://prompt-budget-spark.lovable.app",
+      image: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=600&h=400&fit=crop"
+    },
     {
       title: "AI Chat Simulator",
       description: "An interactive AI chat simulator built with modern web technologies, demonstrating real-time conversation capabilities.",
@@ -11,14 +18,6 @@ export const Portfolio = () => {
       liveUrl: "https://ai-chatsim.vercel.app/",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop"
     },
-    {
-      title: "FinanceLogger",
-      description: "Personal finance tracking application built with Django, helping users manage their financial goals.",
-      tech: ["Django", "Python", "SQLite"],
-      liveUrl: "https://finance-logger-sepia.vercel.app/",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop"
-    },
-    
     {
       title: "FaithfulFlock",
       description: "Church management system built with Laravel for managing members, events, and communications.",
@@ -49,6 +48,13 @@ export const Portfolio = () => {
     }
   ];
 
+  const navigateToProject = (url: string) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) {
+      newWindow.opener = null;
+    }
+  };
+
   return (
     <section id="portfolio" className="py-20 sm:py-24 md:py-32 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,14 +70,19 @@ export const Portfolio = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <a 
-              key={project.title} 
-              href={project.liveUrl} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <Card className="h-full flex flex-col bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all duration-300 transform hover:-translate-y-1">
+            <article key={project.title} className="group">
+              <Card
+                role="button"
+                tabIndex={0}
+                onClick={() => navigateToProject(project.liveUrl)}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    navigateToProject(project.liveUrl);
+                  }
+                }}
+                className="h-full flex flex-col bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple/40"
+              >
                 <div className="relative overflow-hidden aspect-video rounded-t-xl">
                   <img 
                     src={project.image}
@@ -80,7 +91,14 @@ export const Portfolio = () => {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-brand-charcoal/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-                    <Button size="sm" className="bg-brand-purple text-brand-off-white font-bold hover:bg-opacity-80 text-sm shadow-lg">
+                    <Button
+                      size="sm"
+                      className="bg-brand-purple text-brand-off-white font-bold hover:bg-opacity-80 text-sm shadow-lg"
+                      onClick={(event) => {
+                        event.stopPropagation();
+                        navigateToProject(project.liveUrl);
+                      }}
+                    >
                       <ExternalLink size={16} className="mr-2" />
                       View Live Demo
                     </Button>
@@ -105,7 +123,7 @@ export const Portfolio = () => {
                   </div>
                 </CardContent>
               </Card>
-            </a>
+            </article>
           ))}
         </div>
       <div className="text-center mt-16">

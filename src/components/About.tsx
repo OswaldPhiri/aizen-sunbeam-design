@@ -47,6 +47,25 @@ export const About = () => {
               Africa. Our mission is to bridge the digital divide by providing world-class technology services 
               at prices that make sense for local businesses.
             </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <Card className="border-2 border-primary/10 shadow-card bg-background">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-foreground mb-2">Vision</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    To build a sleek digital presence and solid IT support system for small businesses in Malawi and beyond.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="border-2 border-primary/10 shadow-card bg-background">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-foreground mb-2">Mission</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Deliver high-quality web apps, graphics, and technical support with a personal touch, modern tools, and future-ready thinking.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
               <div className="flex items-center">
