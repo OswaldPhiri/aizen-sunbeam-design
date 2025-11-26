@@ -12,6 +12,13 @@ export const Portfolio = () => {
       image: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=600&h=400&fit=crop"
     },
     {
+      title: "Unity Investments",
+      description: "Real estate and architectural services site showcasing plots, construction supervision, and quantity surveying for Malawian clients.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+      liveUrl: "https://unityinvestments.vercel.app/",
+      image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=600&h=400&fit=crop"
+    },
+    {
       title: "AI Chat Simulator",
       description: "An interactive AI chat simulator built with modern web technologies, demonstrating real-time conversation capabilities.",
       tech: ["React", "TypeScript", "Tailwind CSS"],
