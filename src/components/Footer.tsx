@@ -32,7 +32,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center h-12">
-              <img src="src/images/AIZEN.png" alt="AizenTech Logo" className="h-12 w-auto object-contain" />
+              <h2 className="text-xl font-bold text-foreground">AizenTech</h2>
             </div>
             <p className="text-muted-foreground leading-relaxed text-sm">
               Creativity Meets Technology. Empowering Malawian businesses with modern, 
