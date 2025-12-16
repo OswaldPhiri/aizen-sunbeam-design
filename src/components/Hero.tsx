@@ -22,30 +22,30 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-background/90 to-background/70"></div>
       </div>
       
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-3 h-3 bg-primary rounded-full animate-float opacity-60"></div>
-      <div className="absolute top-32 right-20 w-2 h-2 bg-primary rounded-full animate-float opacity-40" style={{animationDelay: '1s'}}></div>
-      <div className="absolute bottom-32 left-20 w-4 h-4 bg-primary/30 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
+      {/* Floating Elements - hidden on small screens */}
+      <div className="hidden sm:block absolute top-20 left-10 w-3 h-3 bg-primary rounded-full animate-float opacity-60"></div>
+      <div className="hidden sm:block absolute top-32 right-20 w-2 h-2 bg-primary rounded-full animate-float opacity-40" style={{animationDelay: '1s'}}></div>
+      <div className="hidden sm:block absolute bottom-32 left-20 w-4 h-4 bg-primary/30 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center pt-24 sm:pt-20">
         <div className="max-w-4xl mx-auto animate-fade-in">
           {/* Badge */}
-          <div className="inline-flex items-center bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 border border-primary/20">
+          <div className="inline-flex items-center bg-primary/10 text-primary px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6 border border-primary/20">
             🇲🇼 Proudly Malawian Tech Startup
           </div>
           
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-foreground mb-4 sm:mb-6 leading-tight px-2">
             Creativity Meets{" "}
             <span className="text-primary relative">
               Technology
-              <div className="absolute -bottom-2 left-0 w-full h-1 bg-primary/30 rounded-full"></div>
+              <div className="absolute -bottom-1 sm:-bottom-2 left-0 w-full h-0.5 sm:h-1 bg-primary/30 rounded-full"></div>
             </span>
           </h1>
           
           {/* Subtext */}
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed px-2">
             Affordable Web & Software Development, Graphic Design & Accessories in Malawi. 
             Empowering businesses with modern technology solutions.
           </p>
@@ -72,18 +72,18 @@ export const Hero = () => {
           </div>
           
           {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
+          <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto px-2">
             <div className="text-center animate-slide-up" style={{animationDelay: '0.2s'}}>
-              <div className="text-3xl font-bold text-primary mb-2">50+</div>
-              <div className="text-muted-foreground font-medium">Projects Delivered</div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">50+</div>
+              <div className="text-xs sm:text-sm text-muted-foreground font-medium">Projects Delivered</div>
             </div>
             <div className="text-center animate-slide-up" style={{animationDelay: '0.4s'}}>
-              <div className="text-3xl font-bold text-primary mb-2">100%</div>
-              <div className="text-muted-foreground font-medium">Client Satisfaction</div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">100%</div>
+              <div className="text-xs sm:text-sm text-muted-foreground font-medium">Client Satisfaction</div>
             </div>
             <div className="text-center animate-slide-up" style={{animationDelay: '0.6s'}}>
-              <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-              <div className="text-muted-foreground font-medium">Support Available</div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">24/7</div>
+              <div className="text-xs sm:text-sm text-muted-foreground font-medium">Support Available</div>
             </div>
           </div>
         </div>

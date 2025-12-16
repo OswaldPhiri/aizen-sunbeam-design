@@ -48,7 +48,7 @@ export const About = () => {
               at prices that make sense for local businesses.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="grid grid-cols-1 gap-4 sm:gap-6 mb-8">
               <Card className="border-2 border-primary/10 shadow-card bg-background">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-2">Vision</h3>
@@ -117,7 +117,7 @@ export const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
             {values.map((value, index) => (
               <Card 
                 key={index} 
