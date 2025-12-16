@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/images/AIZEN.png";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,13 +25,11 @@ export const Header = () => {
               scrollToSection("home");
             }}
             aria-label="Go to homepage"
-            className="flex items-center h-14 sm:h-20 pr-4 sm:pr-6 -ml-2 sm:-ml-3 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+            className="flex items-center cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
           >
-            <img
-              src={logo}
-              alt="AizenTech Logo"
-              className="h-14 sm:h-20 w-auto object-contain"
-            />
+            <span className="text-xl sm:text-2xl font-bold text-foreground">
+              Aizen<span className="text-primary">Tech</span>
+            </span>
           </a>
 
           {/* Desktop Navigation */}
