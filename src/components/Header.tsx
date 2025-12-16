@@ -26,12 +26,12 @@ export const Header = () => {
               scrollToSection("home");
             }}
             aria-label="Go to homepage"
-            className="flex items-center h-20 pr-6 -ml-3 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+            className="flex items-center h-14 sm:h-20 pr-4 sm:pr-6 -ml-2 sm:-ml-3 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
           >
             <img
               src={logo}
               alt="AizenTech Logo"
-              className="h-20 w-auto object-contain"
+              className="h-14 sm:h-20 w-auto object-contain"
             />
           </a>
 

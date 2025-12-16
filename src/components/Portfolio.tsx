@@ -5,6 +5,13 @@ import { ExternalLink } from "lucide-react";
 export const Portfolio = () => {
   const projects = [
     {
+      title: "Smouldering Charcoal",
+      description: "An interactive story website that takes you on a journey through the book 'Smouldering Charcoal' by Tiyambe Zeleza - a Malawian literary classic.",
+      tech: ["React", "TypeScript", "Interactive Storytelling"],
+      liveUrl: "https://v0-interactive-story-website-steel.vercel.app/",
+      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop"
+    },
+    {
       title: "BudgetMate",
       description: "A friendly personal finance dashboard that helps you track spending, log transactions, and stay on budget with a clean UI.",
       tech: ["Next.js", "TypeScript", "Tailwind CSS"],
