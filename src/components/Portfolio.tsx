@@ -5,6 +5,13 @@ import { ExternalLink } from "lucide-react";
 export const Portfolio = () => {
   const projects = [
     {
+      title: "Aizen Portfolio",
+      description: "A graphic design portfolio showcasing stunning artworks, illustrations, and creative designs.",
+      tech: ["React", "TypeScript", "Graphic Design"],
+      liveUrl: "https://visual-haven-upload.lovable.app",
+      image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&h=400&fit=crop"
+    },
+    {
       title: "Smouldering Charcoal",
       description: "An interactive story website that takes you on a journey through the book 'Smouldering Charcoal' by Tiyambe Zeleza - a Malawian literary classic.",
       tech: ["React", "TypeScript", "Interactive Storytelling"],
@@ -156,4 +163,3 @@ export const Portfolio = () => {
     </section>
   );
 };
-
