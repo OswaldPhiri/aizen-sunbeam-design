@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# AizenTech Website
 
-## Project info
+This repository contains the source code for the AizenTech website, built to present services, showcase portfolio projects, and convert visitors into leads through a streamlined contact experience.
 
-**URL**: https://lovable.dev/projects/18f78e07-16f6-4964-89a1-541b356d3769
+For potential employers reviewing this project: it demonstrates my ability to design and deliver a responsive, production-ready React application with modern UI patterns, reusable components, and clear information architecture.
 
-## How can I edit this code?
+## Project Overview
 
-There are several ways of editing your application.
+AizenTech is a Malawi-based technology brand focused on:
 
-**Use Lovable**
+- Web and software development
+- Graphic design services
+- Technical support for businesses and individuals
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/18f78e07-16f6-4964-89a1-541b356d3769) and start prompting.
+The site includes a full landing-page flow with:
 
-Changes made via Lovable will be committed automatically to this repo.
+- Hero and value proposition section
+- Services breakdown with feature-level details
+- Portfolio grid with live project links
+- About section with mission, vision, and company values
+- Contact form and direct communication options (including WhatsApp CTA)
 
-**Use your preferred IDE**
+## What This Project Demonstrates
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Strong frontend foundations with React + TypeScript
+- Clean, reusable UI architecture using component composition
+- Modern responsive design with Tailwind CSS and custom animations
+- Practical UX patterns for trust-building and lead generation
+- Accessibility-aware interaction patterns (keyboard/click support on interactive cards)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Tech Stack
 
-Follow these steps:
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui + Radix UI primitives
+- React Router
+- React Hook Form + Zod (dependency ready for validation workflows)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Run Locally
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Prerequisites
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Node.js 18+ (or latest LTS)
+- npm
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Setup
+
+```bash
+git clone <YOUR_REPO_URL>
+cd aizen-sunbeam-design
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will run locally at the Vite development URL shown in your terminal.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - start development server
+- `npm run build` - create production build
+- `npm run build:dev` - create development-mode build
+- `npm run preview` - preview production build locally
+- `npm run lint` - run ESLint checks
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Live Project
 
-## What technologies are used for this project?
+If this project is deployed, add your public URL here for quick reviewer access:
 
-This project is built with:
+- Live site: `<ADD_DEPLOYED_URL>`
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Notes for Recruiters and Hiring Teams
 
-## How can I deploy this project?
+If you would like, I can walk through:
 
-Simply open [Lovable](https://lovable.dev/projects/18f78e07-16f6-4964-89a1-541b356d3769) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Architectural decisions in this codebase
+- How I approach responsive UI and component reuse
+- Trade-offs made for speed, maintainability, and scalability
+- Next improvements I would ship (backend form handling, analytics, CMS integration)
